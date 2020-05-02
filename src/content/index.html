@@ -29,7 +29,40 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Movie Seat Booking</h1>
+    
+    <div class="container">
+      <h2>Paradise Cinema</h2>
+
+      <div class="movie-title">
+        <label>Pick a movie:
+          <select>
+            <option value="10">Joker ($10)</option>
+            <option value="12">Batman ($12)</option>
+            <option value="8">Star Trek ($10)</option>
+            <option value="12">Star Wars ($10)</option>
+            <option value="13">Ironman ($10)</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="options">
+        <div class="option">
+          <div class="seat"></div>
+          <p>N/A</p>
+        </div>
+
+        <div class="option">
+          <div class="seat selected"></div>
+          <p>Selected</p>
+        </div>
+
+        <div class="option">
+          <div class="seat occupied"></div>
+          <p>Occupied</p>
+        </div>
+      </div>
+      
+    </div>
 
     <script src="js/main.js"></script>
   </body>
