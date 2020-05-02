@@ -15,8 +15,8 @@ if ('serviceWorker' in navigator) {
 }
 
 // place your code below
-
-
-console.log(`Hello world!`);
+import View from './View';
+const view = new View();
+console.log(view)
 
 
