@@ -35,12 +35,12 @@
 
       <div class="movie-title">
         <label>Pick a movie:
-          <select>
+          <select id="select-movie">
             <option value="10">Joker ($10)</option>
             <option value="12">Batman ($12)</option>
-            <option value="8">Star Trek ($10)</option>
-            <option value="12">Star Wars ($10)</option>
-            <option value="13">Ironman ($10)</option>
+            <option value="8">Star Trek ($8)</option>
+            <option value="11">Star Wars ($11)</option>
+            <option value="15">Ironman ($15)</option>
           </select>
         </label>
       </div>
@@ -69,18 +69,6 @@
       <div class="seats">
         <div class="row">
           <div class="seat"></div>
-          <div class="seat selected"></div>
-          <div class="seat occupied"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-        </div>
-        <div class="row">
-          <div class="seat"></div>
           <div class="seat"></div>
           <div class="seat"></div>
           <div class="seat"></div>
@@ -175,14 +163,23 @@
           <div class="seat"></div>
           <div class="seat"></div>
         </div>
-        
-
-      </div>
-      
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+      </div>      
 
       <div class="tickets">
-        <p>You have selected <span>3</span> seats</p>
-        <p>for a price of $<span>30</span></p>
+        <p>You have selected <span id="seats-number">0</span> seats</p>
+        <p>for a price of $<span id="price">0</span></p>
       </div>
     </div>
 
