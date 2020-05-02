@@ -1,6 +1,8 @@
 @import "_normalize";
 @import "_variables";
 
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 
 html {
   box-sizing: border-box;
@@ -8,9 +10,90 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  background: $bgcolor;
   color: $yellow;
-  background: $violet;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid black;
+  color: $white;
+
+  h2 {
+    color: $yellow;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+
+  .movie-title {
+    font-size: 1.2rem;
+    
+    label {
+      color: $white;
+    }
+
+    select {
+      font-size: 1rem;
+      margin-left: 0.5rem;
+      padding: 0.2rem;
+      border-radius: 5px;
+      width: 200px;
+    }
+  }
+
+  .seat {
+    width: 20px;
+    height: 20px;
+    margin: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: $bgcolor;
+    cursor: pointer;
+  }
+
+  .seat:hover {
+    transform: scale(1.2);
+  }
+
+  .seat:hover.selected,
+  .seat:hover.occupied {
+    transform: scale(1);
+    cursor: default;
+  }
+
+  .selected {
+    background-color: $light-blue;
+  }
+
+  .occupied {
+    background-color: $white;
+  }
+
+  .options {
+    margin: 2rem 0;
+    padding: 0.5rem;
+    background-color: darken($color: $bgcolor, $amount: 10);
+    display: flex;
+    justify-content: space-between;
+
+    .option {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
