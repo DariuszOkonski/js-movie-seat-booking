@@ -16,7 +16,4 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 import View from './View';
-const view = new View();
-// console.log(view)
-
-
+new View();
